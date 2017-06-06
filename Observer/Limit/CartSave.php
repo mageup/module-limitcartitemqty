@@ -25,20 +25,15 @@ class CartSave implements \Magento\Framework\Event\ObserverInterface
     protected $_checkoutSession;
     protected $_scopeConfig;
     protected $_logger;
-    protected $_messageManager;
-    protected $_message = null;
-    protected $_totalQtyInCart;
 
     public function __construct(
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
-        \Psr\Log\LoggerInterface $logger,
-        \Magento\Framework\Message\ManagerInterface $messageManager
+        \Psr\Log\LoggerInterface $logger
     ) {
         $this->_scopeConfig         = $scopeConfig;
         $this->_checkoutSession     = $checkoutSession;
         $this->_logger              = $logger;
-        $this->_messageManager      = $messageManager;
     }
 
     /**
