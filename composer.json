@@ -1,5 +1,5 @@
 {
-    "name": "trezo/module-limitcartitemqty",
+    "name": "mageup/module-limitcartitemqty",
     "description": "Limit the qty of itens in the cart.",
     "license": "proprietary",
     "authors": [
