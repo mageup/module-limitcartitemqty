@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="trezo" sortOrder="999" translate="label">
+            <label>trezo</label>
+        </tab>
+        <section id="limitcartitemqty" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Limit Cart Item Qty</label>
+            <tab>trezo</tab>
+            <resource>Trezo_LimitCartItemQty::config_trezo_limitcartitemqty</resource>
+            <group id="configuration" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Configuration</label>
+                <field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                    <label>Enabled</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="max_item_qty" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                    <label>Max qty item</label>
+                    <comment/>
+                </field>
+                <field id="error_message" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label" type="text">
+                    <label>Error message</label>
+                    <comment/>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

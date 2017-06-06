@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="model_save_before">
+        <observer instance="Trezo\LimitCartItemQty\Observer\Limit\CartSave" name="trezo_limitcartitemqty_observer_model_save_before"/>
+    </event>
+</config>

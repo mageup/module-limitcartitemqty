@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <limitcartitemqty>
+            <configuration>
+                <enabled>0</enabled>
+                <max_item_qty>7</max_item_qty>
+                <error_message><![CDATA[The maximum quantity allowed in the cart is %s items per purchase.]]></error_message>
+            </configuration>
+        </limitcartitemqty>
+    </default>
+</config>

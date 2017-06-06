@@ -1,0 +1,25 @@
+{
+    "name": "trezo/module-limitcartitemqty",
+    "description": "Limit the qty of itens in the cart.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Trezo",
+            "email": "contato@trezo.com.br"
+        },
+        {
+            "name": "Bruno Roeder",
+            "email": "bruno@trezo.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Trezo\\LimitCartItemQty\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
